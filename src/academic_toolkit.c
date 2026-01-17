@@ -54,6 +54,10 @@ AcademicToolkitRecord *AllocateAcademicToolkitRecord (const char * const store_c
 
 								}
 
+							if (copied_syn_1_s)
+								{
+									FreeCopiedString (copied_syn_1_s);
+								}
 						}		/* if ((syn_1_s == NULL) || ((copied_syn_1_s = EasyCopyToNewString (syn_1_s)) != NULL)) */
 					else
 						{
